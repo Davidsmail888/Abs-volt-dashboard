@@ -1,4 +1,4 @@
-django==5.0a1
+Django==4.2.11
 gunicorn
 python-dotenv
 whitenoise
