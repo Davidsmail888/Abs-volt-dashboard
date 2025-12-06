@@ -30,16 +30,16 @@ if not SECRET_KEY:
 # Render Deployment Code
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+
+ALLOWED_HOSTS = ['abs-volt-dashboard.onrender.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.onrender.com',
+    'https://abs-volt-dashboard.onrender.com',
 ]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:    
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
-
 # Application definition
 
 INSTALLED_APPS = [
